@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .preloadtop img {
+            position: absolute;
+            bottom: -110px;
+            left: 50%;
+            transform: translate(-50%,0);
+        }
+
+        .preloadtop {
+            width: 100%;
+            height: 50vh;
+            background-color: #f9cf01;
+            position: absolute;
+            top: 0;
+            animation: topup 2s cubic-bezier(.22,.94,.65,-0.46) forwards 1s;
+        }
+
+        .preloadbottom {
+            width: 100%;
+            height: 50vh;
+            background-color: #000;
+            position: absolute;
+            bottom: 0;
+            animation: bottomup 2s cubic-bezier(.22,.94,.65,-0.46) forwards 1s;
+        }
+
+        @keyframes topup {
+            to{
+                height: 130px;
+            }            
+        }
+
+        @keyframes bottomup {
+            to {
+                height: 0vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="preload">
+        <div class="preloadtop">
+            <img src="img/preloadtop.png" alt="">
+        </div>
+        <div class="preloadbottom"></div>
+    </div>
+
+</body>
+
+</html>
