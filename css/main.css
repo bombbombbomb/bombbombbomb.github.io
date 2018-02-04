@@ -13,22 +13,40 @@
 
 /* ------------------------------------------- */
 /* Navigation Bar */
-.header {
+/* header {
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
+} */
+
+/* Centre Adjustment */
+.img-logo {
+    width: 18%;
+    position: absolute;
+    transform: translate(-47%, -15%);
 }
 
-.list-logo {
-    text-align: center;
+a.nav-btn-img img,
+.mobile-img-logo {
+    height: 8vh;
 }
+
+.nav-btn-img {
+    padding-bottom: 20px;
+}
+
+/* Background Color - Kuma Yellow */
+.bg-kuma-yellow {
+    background-color: #f9cf01;
+}
+
 
 /* ------------------------------------------- */
 /* Main */
 main {
     /* Add the interval between the navigation bar and content. */
-    padding:120px 0px 20px 0px;
+    padding: 120px 0px 20px 0px;
 }
 
 

@@ -11,59 +11,96 @@
         crossorigin="anonymous">
     <!-- main.css -->
     <link rel="stylesheet" href="css/main.css">
-    
+
 </head>
-<header class="header">
+
+<body>
+    <!-- Nav in header -->
+    <header>
         <div class="container">
-                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-                        <a class="navbar-brand d-block d-sm-block d-md-none" href="#">捲の熊烘焙屋</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarsExample03">
-                            <ul style="width:100%" class="navbar-nav mr-auto ml-auto justify-content-around">
-                                <li class="nav-item d-block">
-                                    <a class="nav-link" href="about.html">
-                                        <h2>關於</h2>
-                                        <span class="sr-only">(current)</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item d-block">
-                                    <a class="nav-link " href="menu.html">
-                                        <h2>菜單</h2>
-                                        <span class="sr-only">(current)</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item active d-none d-sm-none d-md-block header-logo">
-                                    <a class="navbar-brand" href="index.html">
-                                        <h1>捲の熊烘焙屋</h1>
-                                    </a>
-                                </li>
-                                <li class="nav-item active d-block">
-                                    <a class="nav-link" href="selections.html">
-                                        <h2>嚴選</h2>
-                                        <span class="sr-only">(current)</span>
-                                    </a>
-                                </li>
-                                <li class="nav-item d-block">
-                                    <a class="nav-link" href="contact.html">
-                                        <h2>聯絡</h2>
-                                        <span class="sr-only">(current)</span>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
+            <nav class="navbar navbar-expand-md navbar-dark bg-kuma-yellow">
+                <a class="navbar-brand d-block d-md-none" href="#">
+                    <img class="mobile-img-logo" src="img/nav/logo.png" alt="捲の熊烘焙屋-Logo">
+                    <h1 class="text-hide">捲の熊烘焙屋</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbarsE" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars">
+                    <ul style="width:100%" class="navbar-nav mr-auto ml-auto justify-content-around">
+                        <li class="nav-item d-block">
+                            <a id="btn-about" class="nav-link nav-btn-img" href="about.html">
+                                <img class="d-none d-md-block" src="/img/nav/nav-button-01.png" alt="關於我們">
+                                <h2 class="d-block d-md-none">關於我們</h2>
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-block">
+                            <a id="btn-menu" class="nav-link nav-btn-img" href="menu.html">
+                                <img class="d-none d-md-block" src="img/nav/nav-button-02.png" alt="熊的菜單">
+                                <h2 class="d-block d-md-none">熊的菜單</h2>
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li></li>
+                        <li class="nav-item d-none d-md-block ">
+                            <a id="btn-logo" class="navbar-brand" href="index.html">
+                                <img class="img-logo" src="img/nav/logo.png" alt="捲の熊烘焙屋-Logo">
+                                <h1 class="text-hide">捲の熊烘焙屋</h1>
+                            </a>
+                        </li>
+                        <li></li>
+                        <li class="nav-item d-block active">
+                            <a id="btn-selections" class="nav-link nav-btn-img" href="selections.html">
+                                <img class="d-none d-md-block" src="img/nav/nav-button-03.png" alt="嚴選食材">
+                                <h2 class="d-block d-md-none">嚴選食材</h2>
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-block">
+                            <a id="btn-contact" class="nav-link nav-btn-img" href="contact.html">
+                                <img class="d-none d-md-block" src="img/nav/nav-button-04.png" alt="聯絡我們">
+                                <h2 class="d-block d-md-none">聯絡我們</h2>
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
 
     </header>
-    
-    <main></main>
-    
-    <footer></footer>
+    <!-- Article in main -->
+    <main>
+        <article class="container">
+            <section class="row">
+                <div id="selections-title" class="col-md-12 title">
+                    <h3>嚴選食材</h3>
+                </div>
+                <div class="w100"></div>
+                <div class="col-md-6">
+                    <figure></figure>
+                    <figcaption></figcaption>
+                </div>
+                <div class="col-md-6">
+                    <figure></figure>
+                    <figcaption></figcaption>
+                </div>
+                <div class="w100"></div>
+                <div class="col-md-6">
+                    <figure></figure>
+                    <figcaption></figcaption>
+                </div>
+                <div class="col-md-6">
+                    <figure></figure>
+                    <figcaption></figcaption>
+                </div>
+            </section>
+        </article>
+    </main>
 
-<body>
+    <footer></footer>
 
     <!-- Jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
