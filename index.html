@@ -15,113 +15,220 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
 
-  <!-- Demo styles -->
-  <style>
-    body {
-      background: #fff;
-      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      color:#000;
-      margin: 0;
-      padding: 0;
-    }
-    .swiper-container {
-      width: 100%;
-      padding-top: 50px;
-      padding-bottom: 50px;
-    }
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 900px;
-      height: 480px;
-      box-shadow: 0 7px 30px 0px rgba(39, 16, 1, 0.5); 
-      /* border: solid 7px #cc730e; */
-      
-    }
-  </style>
+    <!-- Demo styles -->
+    <style>
+        body {
+            background: #fff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 900px;
+            height: 480px;
+            box-shadow: 0 7px 30px 0px rgba(39, 16, 1, 0.5);
+            /* border: solid 7px #cc730e; */
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-md navbar-dark bg-kuma-yellow">
-                <a class="navbar-brand d-block d-md-none" href="#">
-                    <img class="mobile-img-logo" src="img/nav/logo.png" alt="捲の熊烘焙屋-Logo">
-                    <h1 class="text-hide">捲の熊烘焙屋</h1>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbarsE" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbars">
-                    <ul style="width:100%" class="navbar-nav mr-auto ml-auto justify-content-around">
-                        <li class="nav-item d-block">
-                            <a id="btn-about" class="nav-link nav-btn-img" href="about.html">
-                                <img class="d-none d-md-block" src="/img/nav/nav-button-01.png" alt="關於我們">
-                                <h2 class="d-block d-md-none">關於我們</h2>
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item d-block">
-                            <a id="btn-menu" class="nav-link nav-btn-img" href="menu.html">
-                                <img class="d-none d-md-block" src="img/nav/nav-button-02.png" alt="熊的菜單">
-                                <h2 class="d-block d-md-none">熊的菜單</h2>
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li></li>
-                        <li class="nav-item d-none d-md-block ">
-                            <a id="btn-logo" class="navbar-brand" href="index.html">
-                                <img class="img-logo" src="img/nav/logo.png" alt="捲の熊烘焙屋-Logo">
-                                <h1 class="text-hide">捲の熊烘焙屋</h1>
-                            </a>
-                        </li>
-                        <li></li>
-                        <li class="nav-item d-block active">
-                            <a id="btn-selections" class="nav-link nav-btn-img" href="selections.html">
-                                <img class="d-none d-md-block" src="img/nav/nav-button-03.png" alt="嚴選食材">
-                                <h2 class="d-block d-md-none">嚴選食材</h2>
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item d-block">
-                            <a id="btn-contact" class="nav-link nav-btn-img" href="contact.html">
-                                <img class="d-none d-md-block" src="img/nav/nav-button-04.png" alt="聯絡我們">
-                                <h2 class="d-block d-md-none">聯絡我們</h2>
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                    </ul>
+    <div class="container">
+        <div class="all-box">
+            <!-- Nav in header -->
+            <header>
+                <nav class="navbar navbar-expand-md navbar-dark bg-kuma-yellow">
+                    <a class="navbar-brand d-block d-md-none" href="#">
+                        <img class="mobile-img-logo" src="img/nav/logo.png" alt="捲の熊烘焙屋-Logo">
+                        <h1 class="text-hide">捲の熊烘焙屋</h1>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars" aria-controls="navbarsE" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbars">
+                        <ul style="width:100%" class="navbar-nav mr-auto ml-auto justify-content-around">
+                            <li class="nav-item d-block pos-rel">
+                                <a id="btn-about" class="nav-link nav-btn-img" href="about.html">
+                                    <img class="d-none d-md-block" src="img/btn/about-btn.png" alt="關於我們">
+                                    <img src="img/btn/postmark-hover.png" alt="postmark-hover" class="postmark-hover hover-after">
+                                    <h2 class="d-block d-md-none">關於我們</h2>
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item d-block pos-rel">
+                                <a id="btn-menu" class="nav-link nav-btn-img" href="menu.html">
+                                    <img class="d-none d-md-block" src="img/btn/menu-btn.png" alt="熊的菜單">
+                                    <img src="img/btn/postmark-hover.png" alt="postmark-hover" class="postmark-hover hover-after">
+                                    <h2 class="d-block d-md-none">熊的菜單</h2>
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li></li>
+                            <li class="nav-item d-none d-md-block ">
+                                <a id="btn-logo" class="navbar-brand" href="index.html">
+                                    <img class="img-logo" src="img/nav/logo.png" alt="捲の熊烘焙屋-Logo">
+                                    <h1 class="text-hide">捲の熊烘焙屋</h1>
+                                </a>
+                            </li>
+                            <li></li>
+                            <li class="nav-item d-block pos-rel">
+                                <a id="btn-selections" class="nav-link nav-btn-img" href="selections.html">
+                                    <img class="d-none d-md-block" src="img/btn/selection-btn.png" alt="嚴選食材">
+                                    <img src="img/btn/postmark-hover.png" alt="postmark-hover" class="postmark-hover hover-after">
+                                    <h2 class="d-block d-md-none">嚴選食材</h2>
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item d-block pos-rel">
+                                <a id="btn-contact" class="nav-link nav-btn-img" href="contact.html">
+                                    <img class="d-none d-md-block" src="img/btn/contact-btn.png" alt="聯絡我們">
+                                    <img src="img/btn/postmark-hover.png" alt="postmark-hover" class="postmark-hover hover-after">
+                                    <h2 class="d-block d-md-none">聯絡我們</h2>
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <!-- Article in main -->
+            <main>
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(img/index/sliderpic-01.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(img/index/sliderpic-02.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(img/index/sliderpic-03.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(img/index/sliderpic-04.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(img/index/sliderpic-05.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(img/index/sliderpic-01.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(img/index/sliderpic-02.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(img/index/sliderpic-03.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(img/index/sliderpic-04.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(img/index/sliderpic-05.jpg)"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
-            </nav>
+            </main>
+
+            <footer>
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul>
+                            <li>
+                                <a class="footer-a" href="about.html">關於我們</a>
+                            </li>
+                            <li>
+                                <a class="footer-a" href="menu.html">熊的菜單</a>
+                            </li>
+                            <li>
+                                <a class="footer-a" href="selections.html">嚴選食材</a>
+                            </li>
+                            <li>
+                                <a class="footer-a" href="contact.html">聯絡我們</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w100"></div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="icon-container">
+                            <div class="icon fb">
+                                <a target="_blank" href="#">
+                                    <img src="img/icon/fb-icon.png" alt="Facebook粉絲團" class="hover-before">
+                                    <img src="img/icon/hv-fb-icon.png" alt="" class="hover-after">
+                                </a>
+                            </div>
+                            <div class="icon ig">
+                                <a target="_blank" href="#">
+                                    <img src="img/icon/ig-icon.png" alt="Instagram" class="hover-before">
+                                    <img src="img/icon/hv-ig-icon.png" alt="" class="hover-after">
+                                </a>
+                            </div>
+                            <div class="icon line">
+                                <a target="_blank" href="#">
+                                    <img src="img/icon/line-icon.png" alt="Line" class="hover-before">
+                                    <img src="img/icon/hv-line-icon.png" alt="" class="hover-after">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-12">
+                        <div class="dashed"></div>
+                    </div>
+                    <div class="w100"></div>
+                    <div class="col-md-4">
+                        <div class="info fong-yu">
+                            <p>
+                                豐原信義店:
+                            </p>
+                            <p>營業時間: 09:00 ~ 18:00
+                                <span class="relax">(星期一店休)</span>
+                            </p>
+                            <p>電話:
+                                <span class="mb-phone">
+                                    0968-570222
+                                </span>
+                            </p>
+                            <P>地址: 台中市豐原區信義街48號</P>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info wu-chan">
+                            <p>
+                                五權總店：
+                            </p>
+                            <p>營業時間:08:00 ~ 18:00
+                                <span class="relax">(星期六店休)</span>
+                            </p>
+                            <p>電話:
+                                <span class="phone">
+                                    04-2265-6398
+                                </span>
+                            </p>
+                            <p>地址: 台中市南區五權南路456號</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="info han-ko">
+                            <p>
+                                台中漢口店：
+                            </p>
+                            <p>營業時間: 10:00 ~ 18:00
+                                <span class="relax">(全年無休)</span>
+                            </p>
+                            <p>電話:
+                                <span class="mb-phone">
+                                    0982-535840
+                                </span>
+                            </p>
+                            <p>地址: 台中市中清路一段570號</p>
+                        </div>
+                    </div>
+                    <div class="w100"></div>
+                    <div class="col-md-12 text-center">copyright&nbsp;@&nbsp;2018</div>
+                </div>
+            </footer>
         </div>
-
-    </header>
-
-    <main>
-          <!-- Swiper -->
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-01.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-02.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-03.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-04.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-05.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-01.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-02.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-03.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-04.jpg)"></div>
-      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-05.jpg)"></div>
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
 
-  
-    </main>
 
-    <footer></footer>
+
+
 
 
     <!-- Jquery -->
@@ -131,30 +238,30 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    
-    
+
+
     <!-- Swiper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
 
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      effect: 'coverflow',
-      grabCursor: true,
-      centeredSlides: true,
-      slidesPerView: 'auto',
-      coverflowEffect: {
-        rotate: 50,
-        stretch: 0,
-        depth: 100,
-        modifier: 1,
-        slideShadows : true,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
-  </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
 </body>
 
 </html>
