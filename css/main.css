@@ -10,18 +10,14 @@
     "黑體-繁", "Heiti TC",
     "微軟正黑體", "Microsoft JhengHei", sans-serif;
 }
-
+.all-box {
+    box-shadow:0px 0px 10px 0px rgba(102, 98, 79,0.3);
+}
 /* ------------------------------------------- */
 /* Navigation Bar */
-/* header {
-    z-index: 1030;
-    position: fixed;
-    left: 0;
-    right: 0;    
-    top: 0;
-} */
-body {
-    
+
+.pos-rel {
+    position: relative;
 }
 
 /* Centre Adjustment */
@@ -34,7 +30,6 @@ body {
     /* transform: translate(-47%, -15%); */
 }
 
-a.nav-btn-img img,
 .mobile-img-logo {
     height: 8vh;
 }
@@ -42,6 +37,28 @@ a.nav-btn-img img,
 .nav-btn-img {
     padding-bottom: 20px;
 }
+.postmark-hover {
+    width: 50px;
+    position:  absolute;
+    right: 0;
+    bottom:  11px;
+
+}
+
+.nav-btn-img:hover .hover-after {
+    display:block;
+}
+
+@media screen and (max-width:768px){
+    .postmark-hover {
+        width: 50px;
+        position:  absolute;
+        left: 110px;
+        bottom:  10px;
+    
+    }
+}
+
 
 /* Background Color - Kuma Yellow */
 .bg-kuma-yellow {
@@ -55,12 +72,128 @@ main {
     /* Add the interval between the navigation bar and content. */
     padding: 120px 0px 20px 0px;
 }
+.title h3 {
+    margin-left: 105px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+    position: relative;
+    font-weight: 700;
+    color:#2D2502;
+    font-size:45px;
+}
+.title h3::before {
+    content:"";
+    width:45px;
+    height:45px;
+    position: absolute;
+    background-image: url('../img/title-bagel.png');
+    background-size: cover;
+    right:10px;
+    top:7px;
+}
+
+@media screen and (max-width:460px) {
+    .title h3 {
+        margin-left: 45px;
+    }
+}
 
 
 /* ------------------------------------------- */
 /* Footer */
-/* 內容放在這裡 */
+footer {
+    margin-top: 50px;
+    color:#F2F2F2;
+    background-color: #010101;
+    padding-top:28px;
+}
+footer .row .col-md-12 ul {
+    text-align: center;
+    list-style: none;
+    padding:0;
+}
+footer .row .col-md-12 ul li {
+    display:inline;
+    font-size: 24px;
+    color:#B3B3B3;
+}
+.footer-a {
+    font-size: 24px;
+    font-weight: 500;
+    color:#B3B3B3;
+}
+.footer-a:hover {
+    text-decoration: none;
+    color:#f9cf01;
+}
 
+
+
+footer .row .col-md-12 ul li::after {
+    display:inline;
+    content:"/";
+    margin:0 20px;
+}
+footer .row .col-md-12 ul li:nth-last-child(1)::after {
+    display:none;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: space-between;
+    /* margin-bottom:18px; */
+}
+
+.icon {
+    display: inline;
+}
+/* Hover: Pic Change  */
+.hover-before{
+    display:block;
+}
+.hover-after{
+    display:none;
+}
+.icon:hover .hover-before{
+    display: none;
+}
+.icon:hover .hover-after{
+    display: block;
+}
+
+.dashed::after {
+    content: "-------------------------------------------------------";
+    display: block;
+    font-size:24px;
+    text-align: center;
+    letter-spacing: 10px;
+    color: #f9cf01;
+    overflow: hidden;
+    height: 20px;
+}
+.info {
+    width: 90%;
+    padding-top:16px;
+    padding-left:30px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:20px;
+}
+.col-md-4 .info p {
+    margin-bottom:7px;
+    font-size:16px;
+}
+.relax {
+    font-size:12px;
+    padding-left:2px;
+}
+.mb-phone {
+    letter-spacing: 3.567px;
+}
+
+.phone {
+    letter-spacing: 2.54px;
+}
 
 /* ------------------------------------------- */
 
@@ -75,7 +208,25 @@ main {
 
 /* ------------------------------------------- */
 /* About---------冠華 */
-/* 內容放在這裡 */
+#about-content p {
+    font-size: 22px;
+    margin-left: 125px;
+    margin-bottom:50px;
+}
+@media screen and (max-width:460px) {
+    #about-content p {
+        font-size: 22px;
+        margin-left: 20px;
+        margin-bottom:50px;
+    }
+}
+
+.about-pic {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow:0px 0px 10px 0px #2D2502;
+}
 
 
 /* ------------------------------------------- */
@@ -85,9 +236,64 @@ main {
 
 /* ------------------------------------------- */
 /* Selections----冠華 */
-/* 內容放在這裡 */
+.selection-pic {
+    width: 90%;
+    margin:0 5% 10vh 5%;
+    box-shadow:0px 0px 10px 0px #2D2502;
+}
+figcaption.selection-content {
+    position: relative;
+}
+figcaption.selection-content h4 {
+    font-size: 50px;
+    margin-left:125px;
+    margin-bottom:40px;
+    color:#8B5131;
+}
+figcaption.selection-content h4::before {
+    content:"";
+    width:90px;
+    height:90px;
+    position: absolute;
+    background-image: url('../img/sele-01.png');
+    background-size: cover;
+    left:16px;
+    top:-16px;
+}
+figcaption#sele-02.selection-content h4::before {
+    background-image: url('../img/sele-02.png');
+}
+figcaption#sele-03.selection-content h4::before {
+    background-image: url('../img/sele-03.png');
+}
+figcaption#sele-04.selection-content h4::before {
+    background-image: url('../img/sele-04.png');
+}
 
-
+figcaption.selection-content ul {
+    color:#f9cf01;
+    font-size:40px;
+    padding:0;
+    margin-left:85px;
+}
+figcaption.selection-content li .board {
+    position: relative;
+}
+figcaption.selection-content li .board p{
+    font-size:21px;
+    color: #000000;;
+    margin:0;
+}
+figcaption.selection-content li .board p::before {
+    content:"";
+    height:35px;
+    width: 3px;
+    background-color: #999379;
+    display: block;
+    position: absolute;
+    left:-27px;
+    top:-16px;
+}
 /* ------------------------------------------- */
 /* Contact-------冠華 */
 /* 內容放在這裡 */
