@@ -49,6 +49,17 @@
     display:block;
 }
 
+@media screen and (max-width:768px){
+    .postmark-hover {
+        width: 50px;
+        position:  absolute;
+        left: 110px;
+        bottom:  10px;
+    
+    }
+}
+
+
 /* Background Color - Kuma Yellow */
 .bg-kuma-yellow {
     background-color: #f9cf01;
@@ -77,8 +88,8 @@ main {
     position: absolute;
     background-image: url('../img/title-bagel.png');
     background-size: cover;
-    left:-35px;
-    bottom:7px;
+    right:10px;
+    top:7px;
 }
 
 @media screen and (max-width:460px) {
@@ -214,6 +225,7 @@ footer .row .col-md-12 ul li:nth-last-child(1)::after {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+    box-shadow:0px 0px 10px 0px #2D2502;
 }
 
 
@@ -224,9 +236,64 @@ footer .row .col-md-12 ul li:nth-last-child(1)::after {
 
 /* ------------------------------------------- */
 /* Selections----冠華 */
-/* 內容放在這裡 */
+.selection-pic {
+    width: 90%;
+    margin:0 5% 10vh 5%;
+    box-shadow:0px 0px 10px 0px #2D2502;
+}
+figcaption.selection-content {
+    position: relative;
+}
+figcaption.selection-content h4 {
+    font-size: 50px;
+    margin-left:125px;
+    margin-bottom:40px;
+    color:#8B5131;
+}
+figcaption.selection-content h4::before {
+    content:"";
+    width:90px;
+    height:90px;
+    position: absolute;
+    background-image: url('../img/sele-01.png');
+    background-size: cover;
+    left:16px;
+    top:-16px;
+}
+figcaption#sele-02.selection-content h4::before {
+    background-image: url('../img/sele-02.png');
+}
+figcaption#sele-03.selection-content h4::before {
+    background-image: url('../img/sele-03.png');
+}
+figcaption#sele-04.selection-content h4::before {
+    background-image: url('../img/sele-04.png');
+}
 
-
+figcaption.selection-content ul {
+    color:#f9cf01;
+    font-size:40px;
+    padding:0;
+    margin-left:85px;
+}
+figcaption.selection-content li .board {
+    position: relative;
+}
+figcaption.selection-content li .board p{
+    font-size:21px;
+    color: #000000;;
+    margin:0;
+}
+figcaption.selection-content li .board p::before {
+    content:"";
+    height:35px;
+    width: 3px;
+    background-color: #999379;
+    display: block;
+    position: absolute;
+    left:-27px;
+    top:-16px;
+}
 /* ------------------------------------------- */
 /* Contact-------冠華 */
 /* 內容放在這裡 */
