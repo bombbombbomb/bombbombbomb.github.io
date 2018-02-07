@@ -12,9 +12,34 @@
     <!-- main.css -->
     <link rel="stylesheet" href="css/main.css">
 
-    <style>
-    </style>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
 
+  <!-- Demo styles -->
+  <style>
+    body {
+      background: #fff;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 900px;
+      height: 480px;
+      box-shadow: 0 0 30px 10px rgba(39, 16, 1, 0.5); 
+      border: solid 7px #cc730e;
+      
+    }
+  </style>
 </head>
 
 <body>
@@ -74,7 +99,27 @@
 
     </header>
 
-    <main></main>
+    <main>
+          <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-01.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-02.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-03.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-04.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-05.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-01.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-02.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-03.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-04.jpg)"></div>
+      <div class="swiper-slide" style="background-image:url(img/index/sliderpic-05.jpg)"></div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  
+    </main>
 
     <footer></footer>
 
@@ -86,6 +131,30 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    
+    
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
 </body>
 
 </html>
