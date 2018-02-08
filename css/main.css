@@ -94,8 +94,8 @@ main {
     position: absolute;
     background-image: url('../img/title-bagel.png');
     background-size: cover;
-    right:10px;
-    top:7px;
+    left:-35px;
+    top:3px;
 }
 
 @media screen and (max-width:460px) {
@@ -243,12 +243,22 @@ footer .row .col-md-12 ul li:nth-last-child(1)::after {
 /* ------------------------------------------- */
 /* Selections----冠華 */
 .selection-pic {
-    width: 90%;
-    margin:0 5% 10vh 5%;
+    width: 88%;
+    margin:0 0 90px 12%;
     box-shadow:0px 0px 10px 0px #2D2502;
 }
+
+#sele-pic-02.selection-pic,
+#sele-pic-04.selection-pic {
+    margin:0 12% 90px 0%;
+}
+
 figcaption.selection-content {
     position: relative;
+}
+figcaption#sele-02.selection-content, 
+figcaption#sele-04.selection-content {
+    left:55px;
 }
 figcaption.selection-content h4 {
     font-size: 50px;
@@ -297,12 +307,87 @@ figcaption.selection-content li .board p::before {
     background-color: #999379;
     display: block;
     position: absolute;
-    left:-27px;
+    left:-25px;
     top:-16px;
 }
 /* ------------------------------------------- */
 /* Contact-------冠華 */
-/* 內容放在這裡 */
+
+.contact-info {
+    margin-left:75px;
+}
+.contact-info.wu-chan {
+    margin-bottom:50px;
+}
+.contact-info h5 {
+    color:#724421;
+    font-size: 28px;
+    font-weight: 600;
+}
+.contact-info p{
+    font-size:26px;
+    margin-bottom: 0.3rem;
+    
+}
+
+.contact-info p.op-time::before  {
+    content:"";
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url('../img/icon/open-time-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+.contact-info p.phone-nb::before  {
+    content:"";
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url('../img/icon/phone-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.contact-info p.adress::before  {
+    content:"";
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url('../img/icon/adress-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.contact-info .number {
+    font-family: Times New Roman;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.contact-info .mobile {
+    letter-spacing: 3px;
+}
+
+.contact-info .relax {
+    font-size: 17px;
+    color:#1C1842;
+}
+
+.google-map {
+    width: 100%;
+    height: 400px;
+    background-color: #f9cf01;
+    margin-bottom:50px;
+}
+#map {
+    height: 370px;
+    width: calc(100% - 24px);
+    top:12px;
+    box-shadow:0px 0px 10px 0px #2D2502;
+}
 
 
 /* ------------------------------------------- */
