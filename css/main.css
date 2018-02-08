@@ -348,14 +348,13 @@ figcaption.selection-content li .board p::before {
 
 .contact-info {
     margin-left:75px;
-}
-.contact-info.wu-chan {
     margin-bottom:50px;
 }
 .contact-info h5 {
     color:#724421;
     font-size: 28px;
     font-weight: 600;
+    margin-bottom: 0.7rem;
 }
 .contact-info p{
     font-size:26px;
@@ -420,6 +419,25 @@ figcaption.selection-content li .board p::before {
     width: calc(100% - 24px);
     top:12px;
     box-shadow:0px 0px 10px 0px #2D2502;
+}
+
+@media screen and (max-width:767px){
+    .contact-info {
+        margin-left:15px;
+    }
+
+    .contact-info p{
+        font-size:20px;
+        margin-bottom: 0.3rem;
+        letter-spacing: 3px;
+    }
+    .contact-info .relax {
+        font-size: 16px;
+    }
+
+    #facebook-pl {
+        margin-bottom: 3rem;
+    }
 }
 
 
