@@ -129,8 +129,6 @@ footer .row .col-md-12 ul li {
     color:#f9cf01;
 }
 
-
-
 footer .row .col-md-12 ul li::after {
     display:inline;
     content:"/";
@@ -197,6 +195,25 @@ footer .row .col-md-12 ul li:nth-last-child(1)::after {
     letter-spacing: 2.54px;
 }
 
+@media screen  and (max-width:767px) {
+    .info {
+        width: 68%;
+        padding:  15px 0px;
+        margin-bottom: 0px;
+    }
+    .info.wu-chan{
+        padding-top:35px;
+    }
+    .info.fong-yu {
+        margin-bottom: 50px;
+    }
+
+    .icon-container {
+        justify-content: space-around;
+    }
+
+}
+
 /* ------------------------------------------- */
 
 /* ------------------------------------------- */
@@ -212,10 +229,10 @@ footer .row .col-md-12 ul li:nth-last-child(1)::after {
 /* About---------冠華 */
 #about-content p {
     font-size: 22px;
-    margin-left: 125px;
+    margin-left: 75px;
     margin-bottom:50px;
 }
-@media screen and (max-width:460px) {
+@media screen and (max-width:767px) {
     #about-content p {
         font-size: 22px;
         margin-left: 20px;
