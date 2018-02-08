@@ -94,7 +94,7 @@ main {
     top:3px;
 }
 
-@media screen and (max-width:460px) {
+@media screen and (max-width:767px) {
     .title h3 {
         margin-left: 45px;
     }
@@ -128,8 +128,6 @@ footer .row .col-md-12 ul li {
     text-decoration: none;
     color:#f9cf01;
 }
-
-
 
 footer .row .col-md-12 ul li::after {
     display:inline;
@@ -197,6 +195,18 @@ footer .row .col-md-12 ul li:nth-last-child(1)::after {
     letter-spacing: 2.54px;
 }
 
+@media screen  and (max-width:767px) {
+    .info {
+        width: 68%;
+        padding:  15px 0px;
+    }
+
+    .icon-container {
+        justify-content: space-around;
+    }
+
+}
+
 /* ------------------------------------------- */
 
 /* ------------------------------------------- */
@@ -212,10 +222,10 @@ footer .row .col-md-12 ul li:nth-last-child(1)::after {
 /* About---------冠華 */
 #about-content p {
     font-size: 22px;
-    margin-left: 125px;
+    margin-left: 75px;
     margin-bottom:50px;
 }
-@media screen and (max-width:460px) {
+@media screen and (max-width:767px) {
     #about-content p {
         font-size: 22px;
         margin-left: 20px;
