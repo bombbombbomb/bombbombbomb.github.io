@@ -20,6 +20,53 @@ body {
     background-color: #FFFFFF;
 }
 /* ------------------------------------------- */
+/* background animation */
+.bgcanim {
+    z-index: -1;
+    position: absolute;
+    width: 190px;
+    left: 5%;
+    top: 55%;    
+    opacity: 0.5;
+    animation: momo 1.61821s ease-in forwards 0.5s;
+}
+@keyframes momo {
+    to {
+        left: 1%;
+        transform: rotate(-30deg);
+    }
+}
+/* title animation */
+.titleanim {
+    position: absolute;
+    left: 25%;
+    top: 0;
+    width: 50px;
+    animation: roll 1.5s ease-in-out forwards 2.5s;
+    
+}
+.titleanim.second{
+    left: 90%;
+    animation: rolling 1s ease-out forwards; 
+ }
+@keyframes roll {
+    to {
+        left: 96.666%;
+        transform: rotate(720deg);
+    }
+}
+@keyframes rolling {
+    0% {
+        left: 96.666%;
+    }
+    100% {
+        transform: rotate(-360deg);
+        top:-50%;
+        left: 80%;
+    }
+}
+
+
 /* Navigation Bar */
 
 .pos-rel {

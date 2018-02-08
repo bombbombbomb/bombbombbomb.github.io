@@ -215,6 +215,9 @@
 </head>
 
 <body>
+    <div class="bgcanim">
+        <img class="img-fluid" src="img/ball.png" alt="">
+    </div>
     <div class="container">
         <div class="all-box">
             <!-- Nav in header -->
@@ -278,7 +281,12 @@
             <main>
                 <section>
                     <div id="menu-title" class="col-md-12 title">
-                        <h3>熊の菜單</h3>
+                        <h3>熊の菜單
+                            <div class="titleanim">
+                                <img class="img-fluid" src="img/ball.png" alt="">
+                            </div>
+                        </h3>
+
                     </div>
                     <div class="menucontent">
                         <!-- menu_btn -->
@@ -842,6 +850,12 @@
                 });
             }
         });
+    </script>
+    <!-- rolling animation  -->
+    <script>
+        setTimeout(function () {
+            $(".titleanim").addClass("second")
+        }, 3900);
     </script>
 </body>
 
