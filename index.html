@@ -62,7 +62,7 @@
             background-color: #f9cf01;
             position: absolute;
             top: 0;
-            animation: topup 4s cubic-bezier(.22, .94, .65, -0.46) forwards 1s;
+            animation: topup 2s cubic-bezier(.22, .94, .65, -0.46) forwards 1s;
             opacity: 1;
         }
 
@@ -72,15 +72,16 @@
             background-color: #000;
             position: absolute;
             bottom: 0;
-            animation: bottomup 4s cubic-bezier(.22, .94, .65, -0.46) forwards 1s;
+            animation: bottomup 2s cubic-bezier(.22, .94, .65, -0.46) forwards 1s;
         }
 
         @keyframes topup {
-            to {
-                height: 130px;               
+            99% {               
+                opacity: 1;
             }
-            100% {
-                opacity: 0;
+            100% {                
+                height: 130px; 
+                opacity: 0;   
             }
         }
 
@@ -305,7 +306,8 @@
 
 
     <!-- Jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
     <!-- Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -340,6 +342,12 @@
                 disableOnInteraction: false,
             },
         });
+    </script>
+    <!-- preload -->
+    <script>
+     $(window).load(function () {
+            $(".preload").delay(3000).fadeOut(500);            
+    });
     </script>
 </body>
 
