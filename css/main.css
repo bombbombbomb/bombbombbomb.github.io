@@ -12,7 +12,8 @@
 }
 
 body {
-    background-color: #E6E6E6;
+    background-image: url('../img/bg-dark.jpg');
+    background-size: cover;
 }
 
 .all-box {
@@ -337,19 +338,19 @@ figcaption.selection-content h4::before {
     width:90px;
     height:90px;
     position: absolute;
-    background-image: url('../img/sele-01.png');
+    background-image: url('../img/select/sele-01.png');
     background-size: cover;
     left:16px;
     top:-16px;
 }
 figcaption#sele-02.selection-content h4::before {
-    background-image: url('../img/sele-02.png');
+    background-image: url('../img/select/sele-02.png');
 }
 figcaption#sele-03.selection-content h4::before {
-    background-image: url('../img/sele-03.png');
+    background-image: url('../img/select/sele-03.png');
 }
 figcaption#sele-04.selection-content h4::before {
-    background-image: url('../img/sele-04.png');
+    background-image: url('../img/select/sele-04.png');
 }
 
 figcaption.selection-content ul {
