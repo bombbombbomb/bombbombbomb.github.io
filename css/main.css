@@ -36,8 +36,6 @@
 
 .nav-btn-img {
     padding-bottom: 20px;
-    transition: all 2000ms ease-in-out;
-    
 }
 .postmark-hover {
     width: 50px;
@@ -45,13 +43,11 @@
     right: 0;
     bottom:  11px;
     opacity: 0;
-    transition: all 2000ms ease-in-out;
-    
-
+    transition: all 1000ms ease-in;
 }
 
 .nav-btn-img:hover .postmark-hover {
-    transition: all 2000ms ease-in-out;
+    transition: all 200ms ease-in-out;
     opacity: 1;
 }
 
