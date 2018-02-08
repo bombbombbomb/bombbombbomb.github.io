@@ -94,7 +94,7 @@ main {
     top:3px;
 }
 
-@media screen and (max-width:460px) {
+@media screen and (max-width:767px) {
     .title h3 {
         margin-left: 45px;
     }
