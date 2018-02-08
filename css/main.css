@@ -199,6 +199,13 @@ footer .row .col-md-12 ul li:nth-last-child(1)::after {
     .info {
         width: 68%;
         padding:  15px 0px;
+        margin-bottom: 0px;
+    }
+    .info.wu-chan{
+        padding-top:35px;
+    }
+    .info.fong-yu {
+        margin-bottom: 50px;
     }
 
     .icon-container {
