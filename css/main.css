@@ -197,7 +197,7 @@ footer .row .col-md-12 ul li:nth-last-child(1)::after {
 
 @media screen  and (max-width:767px) {
     .info {
-        width: 68%;
+        width: 72%;
         padding:  15px 0px;
         margin-bottom: 0px;
     }
@@ -323,6 +323,26 @@ figcaption.selection-content li .board p::before {
     left:-25px;
     top:-16px;
 }
+
+@media screen and (max-width:767px){
+    .selection-pic {
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #sele-pic-02.selection-pic,
+    #sele-pic-04.selection-pic {
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .selection-content {
+        margin-bottom: 90px;
+    }
+    figcaption#sele-02.selection-content, 
+    figcaption#sele-04.selection-content {
+        left:0px;
+    }
+}
+
 /* ------------------------------------------- */
 /* Contact-------冠華 */
 
