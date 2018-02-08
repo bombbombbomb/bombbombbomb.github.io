@@ -126,7 +126,7 @@ body {
 /* Main */
 main {
     /* Add the interval between the navigation bar and content. */
-    padding: 120px 0px 20px 0px;
+    padding: 80px 0px 20px 0px;
 }
 .title h3 {
     margin-left: 105px;
@@ -249,10 +249,14 @@ footer .row .col-md-12 ul li:nth-last-child(1)::after {
     letter-spacing: 2.54px;
 }
 
+.copyright {
+    font-size: 12px;
+}
+
 @media screen  and (max-width:767px) {
     .info {
-        width: 72%;
-        padding:  15px 0px;
+        width: 90%;
+        padding:  15px 0px 15px 35px;
         margin-bottom: 0px;
     }
     .info.wu-chan{
@@ -266,6 +270,12 @@ footer .row .col-md-12 ul li:nth-last-child(1)::after {
         justify-content: space-around;
     }
 
+}
+
+@media screen and (max-width:350px) {
+    .info {
+        padding-left:10px;
+    }
 }
 
 /* ------------------------------------------- */
