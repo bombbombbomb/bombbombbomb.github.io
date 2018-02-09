@@ -10,14 +10,15 @@
     "黑體-繁", "Heiti TC",
     "微軟正黑體", "Microsoft JhengHei", sans-serif;
 }
-
+/* Add body a background image. */
 body {
     background-image: url('../img/bg-dark.jpg');
     background-size: cover;
 }
 
+/* Add container box-shadow. */
 .all-box {
-    box-shadow:0px 0px 10px 0px rgba(102, 98, 79,0.3);
+    box-shadow:0px 0px 10px 5px rgba(102, 98, 79,0.3);
     background-color: #FFFFFF;
 }
 /* ------------------------------------------- */
@@ -83,14 +84,15 @@ body {
     transform: translate(-50%,-10%);
     /* transform: translate(-47%, -15%); */
 }
-
+/* The second LOGO only display when using the mobile. */
 .mobile-img-logo {
     height: 8vh;
 }
-
+/* Add the interval between the bottom of NAV and the stamp-buttons. */
 .nav-btn-img {
     padding-bottom: 20px;
 }
+/* The Postmark */
 .postmark-hover {
     width: 50px;
     position:  absolute;
@@ -105,7 +107,13 @@ body {
     opacity: 1;
 }
 
-@media screen and (max-width:768px){
+@media screen and (max-width:992px){
+    .img-logo { 
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:767px){
     .postmark-hover {
         width: 50px;
         position:  absolute;
