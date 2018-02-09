@@ -20,6 +20,7 @@ body {
 .all-box {
     box-shadow:0px 0px 10px 5px rgba(102, 98, 79,0.3);
     background-color: #FFFFFF;
+    position: relative;
 }
 
 /* ------------------------------------------- */
@@ -33,14 +34,14 @@ body {
     z-index: -1;
     position: absolute;
     width: 190px;
-    left: 5%;
-    top: 55%;    
+    left: -5%;
+    top: 60vh;    
     opacity: 0.5;
     animation: momo 1.61821s ease-in forwards 0.5s;
 }
 @keyframes momo {
     to {
-        left: 1%;
+        left: -8%;
         transform: rotate(-30deg);
     }
 }
