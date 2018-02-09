@@ -21,7 +21,13 @@ body {
     box-shadow:0px 0px 10px 5px rgba(102, 98, 79,0.3);
     background-color: #FFFFFF;
 }
+
 /* ------------------------------------------- */
+/* Background Color - Kuma Yellow */
+.bg-kuma-yellow {
+    background-color: #f9cf01;
+}
+
 /* background animation */
 .bgcanim {
     z-index: -1;
@@ -101,7 +107,7 @@ body {
     opacity: 0;
     transition: all 1000ms ease-in;
 }
-
+/* The Hover of the NAV buttons. */
 .nav-btn-img:hover .postmark-hover {
     transition: all 200ms ease-in-out;
     opacity: 1;
@@ -124,10 +130,7 @@ body {
 }
 
 
-/* Background Color - Kuma Yellow */
-.bg-kuma-yellow {
-    background-color: #f9cf01;
-}
+
 
 
 /* ------------------------------------------- */
@@ -136,6 +139,8 @@ main {
     /* Add the interval between the navigation bar and content. */
     padding: 80px 0px 20px 0px;
 }
+
+/* Title */
 .title h3 {
     margin-left: 105px;
     margin-bottom: 50px;
@@ -145,6 +150,8 @@ main {
     color:#2D2502;
     font-size:45px;
 }
+
+/* The Bagel pic in Title*/
 .title h3::before {
     content:"";
     width:45px;
@@ -171,35 +178,38 @@ footer {
     background-color: #010101;
     padding-top:28px;
 }
+/* Sitemap */
 footer .row .col-md-12 ul {
     text-align: center;
     list-style: none;
     padding:0;
 }
+/*The font color and the font size of the items in the Sitemap.  */
 footer .row .col-md-12 ul li {
     display:inline;
-    font-size: 24px;
-    color:#B3B3B3;
 }
 .footer-a {
     font-size: 24px;
     font-weight: 500;
     color:#B3B3B3;
 }
+
+/* hover: Change color. */
 .footer-a:hover {
     text-decoration: none;
     color:#f9cf01;
 }
-
+/* Add the "/" after the item. */
 footer .row .col-md-12 ul li::after {
     display:inline;
     content:"/";
     margin:0 20px;
 }
+/* Delete the last " / " */
 footer .row .col-md-12 ul li:nth-last-child(1)::after {
     display:none;
 }
-
+/* the icon */
 .icon-container{
     display: flex;
     justify-content: space-between;
@@ -222,7 +232,7 @@ footer .row .col-md-12 ul li:nth-last-child(1)::after {
 .icon:hover .hover-after{
     display: block;
 }
-
+/* the dashed line */
 .dashed::after {
     content: "-------------------------------------------------------";
     display: block;
@@ -233,6 +243,7 @@ footer .row .col-md-12 ul li:nth-last-child(1)::after {
     overflow: hidden;
     height: 20px;
 }
+/* The Store Information */
 .info {
     width: 90%;
     padding-top:16px;
@@ -241,22 +252,25 @@ footer .row .col-md-12 ul li:nth-last-child(1)::after {
     margin-right:auto;
     margin-bottom:20px;
 }
+/* The paragraph. */
 .col-md-4 .info p {
     margin-bottom:7px;
     font-size:16px;
 }
+/* The closed time. */
 .relax {
     font-size:12px;
     padding-left:2px;
 }
+/* Moblie Phone Number. */
 .mb-phone {
     letter-spacing: 3.567px;
 }
-
+/* Phone Number. */
 .phone {
     letter-spacing: 2.54px;
 }
-
+/* CopyRight  */
 .copyright {
     font-size: 12px;
 }
