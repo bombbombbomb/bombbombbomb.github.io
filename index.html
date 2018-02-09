@@ -10,97 +10,17 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
-    <!-- main.css -->
-    <link rel="stylesheet" href="css/main.css">
-
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
     <!-- favicon -->
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <!-- Demo styles -->
-    <style>
-        /* swiper */
 
-        body {
-            font-size: 14px;
-            color: #000;
-            margin: 0;
-            padding: 0;
-        }
+    <!-- main.css -->
+    <link rel="stylesheet" href="css/main.css">
 
-        .swiper-container {
-            width: 100%;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
 
-        .swiper-slide {
-            max-width: 60%;            
-            box-shadow: 0 7px 30px 0px rgba(39, 16, 1, 0.5);
-            /* border: solid 7px #cc730e; */
-        }
-        @media screen and (max-width:991px){
-            .swiper-slide {
-                max-width: 80%;
-            }
-        } 
 
-        /* preload */
-
-        .preload {
-            width: 100%;
-            height: 100vh;
-            position: fixed;
-            z-index: 9030;
-        }
-
-        .preloadtop img {
-            position: absolute;
-            width: 160px;
-            bottom: -80px;
-            left: 50%;
-            transform: translate(-50%, 0);
-        }
-
-        .preloadtop {
-            width: 100%;
-            height: 50vh;
-            background-color: #f9cf01;
-            position: absolute;
-            top: 0;
-            animation: topup 2s cubic-bezier(.22, .94, .65, -0.46) forwards 1s;
-            opacity: 1;
-        }
-
-        .preloadbottom {
-            width: 100%;
-            height: 50vh;
-            background-color: #000;
-            position: absolute;
-            bottom: 0;
-            animation: bottomup 2s cubic-bezier(.22, .94, .65, -0.46) forwards 1s;
-        }
-
-        @keyframes topup {
-            99% {
-                opacity: 1;
-            }
-            100% {
-                height: 130px;
-                opacity: 0;
-            }
-        }
-
-        @keyframes bottomup {
-            to {
-                height: 0vh;
-            }
-        }
-
-        .swiper-pagination-bullet-active {
-            background-color: #f9cf01;
-        }
-    </style>
 </head>
 
 <body>

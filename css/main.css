@@ -14,6 +14,8 @@
 body {
     background-image: url('../img/bg-dark.jpg');
     background-size: cover;
+    margin: 0;
+    padding: 0;
 }
 
 /* Add container box-shadow. */
@@ -311,8 +313,85 @@ footer .row .col-md-12 ul li:nth-last-child(1)::after {
 /* Index---------沐謙*/
 /* 內容放在這裡 */
 main#index-content {
-    padding: 10px 0px 20px 0px;
+    padding: 8vh 0px 20px 0px;
 }
+
+/* swiper */
+        
+.swiper-container {
+            width: 100%;
+            padding-bottom: 50px;
+}
+
+.swiper-slide {
+            max-width: 60%;
+            box-shadow: 0 7px 30px 0px rgba(39, 16, 1, 0.5);
+            /* border: solid 7px #cc730e; */
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #f9cf01;
+}
+
+
+@media screen and (max-width:991px) {
+            .swiper-slide {
+                max-width: 80%;
+    }
+}
+
+/* preload */
+
+.preload {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 9030;
+}
+
+.preloadtop img {
+            position: absolute;
+            width: 160px;
+            bottom: -80px;
+            left: 50%;
+            transform: translate(-50%, 0);
+}
+
+.preloadtop {
+            width: 100%;
+            height: 50vh;
+            background-color: #f9cf01;
+            position: absolute;
+            top: 0;
+            animation: topup 2s cubic-bezier(.22, .94, .65, -0.46) forwards 1s;
+            opacity: 1;
+}
+
+.preloadbottom {
+            width: 100%;
+            height: 50vh;
+            background-color: #000;
+            position: absolute;
+            bottom: 0;
+            animation: bottomup 2s cubic-bezier(.22, .94, .65, -0.46) forwards 1s;
+}
+
+@keyframes topup {
+    99% {
+        opacity: 1;
+    }
+    100% {
+        height: 130px;
+        opacity: 0;
+    }
+}
+
+@keyframes bottomup {
+    to {
+        height: 0vh;
+    }
+}
+
 
 
 /* ------------------------------------------- */
@@ -341,7 +420,204 @@ main#index-content {
 /* ------------------------------------------- */
 /* Menu----------沐謙 */
 /* 內容放在這裡 */
+.border-top-orange {
+    border-top:solid 5px #F1B676;
+    width: 100%;
+    margin: 25px 0;
+}
 
+/* menu content */
+
+.menucontent {
+            width: 87%;
+            margin: auto;
+}
+
+ /* filterizr */
+
+.filterizr__controls {
+            /* margin-top: 20px; */
+}
+
+.filterizr__controls li {
+            text-align: center;
+            width: 133px;
+            margin: 7px;
+            border-radius: 50px;
+            padding: 7px;
+            background-color: #F9CF16;
+            color: #333;
+            cursor: pointer;
+            display: inline-block;
+            text-transform: uppercase;
+            transition: all 200ms;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 20px;
+            text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+}
+
+.filterizr__controls li.active {
+            box-shadow: 0 0 10px 3px rgba(63, 38, 14, 0.5);
+            color: rgb(128, 58, 12);
+            background-color: rgb(249, 132, 22);
+}
+
+.filterizr__elements figure {
+            padding: 1rem;
+}
+
+.filterizr__elements figure figcaption {
+            color: white;
+            position: absolute;
+            text-transform: uppercase;
+            padding: 1rem;
+            z-index: 1;
+            bottom: 1rem;
+}
+
+.filterizr__elements img {
+            box-shadow: 0 0 20px 5px rgba(235, 168, 106, 0.5);
+}
+
+.img-thumbnail {
+            background-color: #F9CF16;
+            transition: all 500ms;
+            cursor: pointer;
+}
+
+
+
+.mask {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            width: calc(100% - 42px);
+            height: calc(100% - 42px);
+            ;
+            background-color: rgba(249, 132, 22, 0.2);
+
+            transition: all 500ms ease-in-out;
+            opacity: 0;
+
+}
+
+.filterizr__elements figure figcaption {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0;
+            color: #000;
+            font-weight: 900;
+}
+
+.filtr-item:hover .mask {
+            transform: translate(-50%, -50%) scale(0.9);
+            opacity: 1;
+            z-index: 2;
+}
+
+.filtr-item:hover .img-thumbnail {
+            background-color: rgb(249, 132, 22);
+}
+
+.filtr-item:hover img {
+            transform: scale(0.9);
+}
+
+ /* modal */
+.modal .row {
+
+            margin: 0;
+}
+.modal .col-12 {
+            padding: 0;
+}
+
+.modal-content {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute;
+            padding: 0;
+            width: 600px;
+            height: 300px;
+            margin: 50px 0;
+}
+
+.modal-body {
+            padding: 0;
+}
+
+.close {
+            position: absolute;
+            top: -25px;
+            right: -20px;
+}
+
+.modalframe {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background-color: #F1B676;
+            box-shadow: inset 7px 0 10px 0px rgba(63, 38, 14, 0.5);
+}
+
+.modaltext {
+            padding: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 230px;
+            height: 230px;
+            color: #322013;
+}
+
+.modaltext::before {
+            content: "";
+            width: 240px;
+            height: 240px;
+            border: solid 3px #322013;
+            position: absolute;
+            left: 0;
+            top: 0;
+}
+
+.modaltext::after {
+            content: "";
+            width: 240px;
+            height: 240px;
+            border: solid 3px #322013;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+}
+
+.modaltext h5 {
+            padding-bottom: 10px;
+            border-bottom: solid 2px #322013;
+            text-align: center;
+            font-weight: 700;
+}
+
+.price {
+            position: absolute;
+            right: 20px;
+            bottom: 0;
+            font-weight: 700;
+}
+
+@media screen and (max-width:992px) {
+    .modal-content {
+                width: 300px;
+                height: 600px;
+    }
+    .modalframe {
+                box-shadow: inset 0 7px 10px 0px rgba(63, 38, 14, 0.5);
+    }
+}
 
 /* ------------------------------------------- */
 /* Selections----冠華 */
