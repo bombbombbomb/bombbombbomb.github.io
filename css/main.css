@@ -464,11 +464,12 @@ main#index-content {
 .filterizr__controls li.active {
             box-shadow: 0 0 10px 3px rgba(63, 38, 14, 0.5);
             color: rgb(128, 58, 12);
-            background-color: rgb(249, 132, 22);
+            background-color: rgb(249, 132, 22);            
 }
 
 .filterizr__elements figure {
             padding: 1rem;
+            cursor: pointer;
 }
 
 .filterizr__elements figure figcaption {
@@ -481,7 +482,7 @@ main#index-content {
 }
 
 .filterizr__elements img {
-            box-shadow: 0 0 20px 5px rgba(235, 168, 106, 0.5);
+            box-shadow: 0 0 20px 5px rgba(235, 168, 106, 0.5);            
 }
 
 .img-thumbnail {
