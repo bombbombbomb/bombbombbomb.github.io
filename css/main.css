@@ -786,12 +786,12 @@ figcaption.selection-content li .board p::before {
 .google-map {
     width: 100%;
     height: 400px;
-    background-color: #f9cf01;
+    /* background-color: #f9cf01; */
     margin-bottom:50px;
 }
 #map {
     height: 370px;
-    width: calc(100% - 24px);
+    width:85%;
     top:12px;
     box-shadow:0px 0px 10px 0px #2D2502;
 }
